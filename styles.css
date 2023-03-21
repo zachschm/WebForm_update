@@ -1,0 +1,430 @@
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+    text-align: center;
+    background-color: #002d44;
+    font-family: 'Montserrat', sans-serif;
+}
+#menu
+{
+    background-color: teal;
+}
+#illinois
+{
+    color: white;
+}
+
+#navbar
+{
+    background-color: transparent;
+    margin-top: 0;
+    padding: 1%;
+}
+#menu
+{
+    background-color: #016699;
+    margin: 0;
+}
+#nav
+{
+    color: white;
+}
+#company
+{
+    margin-top: 2%;
+}
+#logo
+{
+    margin-bottom: 5%;
+}
+#home
+{
+    background-color: white;
+    padding-bottom: 0%;
+}
+.home_text
+{
+    padding-top: 8%;
+    padding-bottom: 8%;
+    color: #015885;
+    font-weight: normal;
+}
+.home_text_container
+{
+    text-align: left;
+    padding-left: 10%;
+}
+.home_image_container
+{
+    text-align: right;
+    padding-right: 10%;
+}
+.welcome
+{
+    padding-top: 2%;
+    padding-bottom: 1%;
+    color: #01496c;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    font-size: 6rem;
+}
+.fbla
+{
+    height: 110%;
+
+}
+.title
+{
+    color: #016699;
+    font-weight: bold;
+
+}
+.titleDiv
+{
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+.directions_container
+{
+    padding-bottom: 0%;
+    background-color: white;
+    color: #016699;
+}
+.directions_title_bottom
+{
+    font-size: 3rem;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin-top: 5%;
+    background-color: #016699;
+    color: white;
+    /*border-color: white;*/
+    /*border-style: solid;*/
+    /*border-right: none;*/
+    /*border-left: none;*/
+    /*border-bottom-width: 7px;*/
+}
+.directions_title_top
+{
+    font-size: 3rem;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    background-color: #016699;
+    color: white;
+    /*border-color: white;*/
+    /*border-style: solid;*/
+    /*border-right: none;*/
+    /*border-left: none;*/
+    /*border-bottom-width: 7px;*/
+}
+.directions_border
+{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+    padding: 5% 0%;
+    border: 5px solid;
+    border-radius: 5%;
+}
+.directions
+{
+    text-align: left;
+    padding-top: 5%;
+    padding-right: 7%;
+    padding-left: 12%;
+    font-size: 1.7rem;
+    line-height: 2;
+}
+.sample1
+{
+    margin-top: 8%;
+    padding-right: 12%;
+    padding-left: 12%;
+}
+.sample
+{
+    margin-top: 6%;
+    padding-right: 12%;
+    padding-left: 12%;
+}
+.begin
+{
+    background-color: #016699;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: white;
+    font-size: 4rem;
+}
+.sub_description
+{
+    color: #669901;
+    margin-top: 3%;
+}
+.subheader
+{
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    color: lightgray;
+    /*background-color: #669901;*/
+    background-color: #024a6e;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.first_subheader
+{
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    color: lightgray;
+    /*background-color: #669901;*/
+    background-color: #024a6e;
+    margin-bottom: 5%;
+}
+
+#Points
+{
+    background-color: #016699;
+}
+
+/*.subheaderText*/
+/*{*/
+/*    padding-top: 2%;*/
+/*    padding-bottom: 2%;*/
+/*    color: #016699;*/
+/*    padding-left: 8%;*/
+/*    padding-right: 8%;*/
+/*}*/
+select
+{
+    background-color: #002d44;
+    border-color: #669901;
+    color: #669901;
+}
+select:hover
+{
+    background-color: #00263a;
+    border-color: #4c7201;
+    color: #4c7201;
+}
+.pointButton
+{
+    background-color: #002d44;
+    color: #669901;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 30%;
+    /*border: 10px solid #111141;*/
+    border-top: 7px solid #016699;
+    border-bottom: 7px solid #016699;
+}
+.pointButton:hover
+{
+    background-color: #00263a;
+}
+
+.col
+{
+    /*padding-left: 5%;*/
+    /*padding-right: 5%;*/
+    margin-bottom: 5%;
+}
+.two_examples
+{
+    margin-bottom: 2%;
+}
+/*.oneClick*/
+/*{*/
+/*    background-color: #029fee;*/
+/*    color: white;*/
+/*}*/
+.twoClick
+{
+    background-color: teal;
+    color: white;
+    border-color: teal;
+}
+.twoClick:hover
+{
+    background-color: #016c6c;
+    border-color: #016c6c;
+}
+.twoClick_dir
+{
+    background-color: teal;
+    color: white;
+    border-color: teal;
+}
+.twoClick_dir:hover
+{
+    background-color: #016c6c;
+    border-color: #016c6c;
+
+}
+.threeClick
+{
+    background-color: #016699;
+    color: #669901;
+}
+.clicked
+{
+    background-color: #016699;
+    color: lightgray;
+}
+.clicked:hover
+{
+    background-color: #04608c;
+    border-color: #04608c;
+}
+.clicked_dir
+{
+    background-color: #016699;
+    color: lightgray;
+}
+.clicked_dir:hover
+{
+    background-color: #04608c;
+    border-color: #04608c;
+}
+#dir1
+{
+    /*color: #029fee;*/
+}
+#dir2
+{
+}
+#dir3
+{
+
+}
+#three .pointButton
+{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.colleges
+{
+    padding: 2%;
+}
+.foot
+{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #016699;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+#upload
+{
+    background-color: white;
+}
+.upload_content
+{
+    margin-top: 0%;
+    padding-top: 0%;
+    margin-bottom: 5%;
+}
+.form
+{
+    background-color: white;
+}
+.submissions
+{
+    margin-top: 10%;
+    margin-bottom: 1%;
+}
+.submit
+{
+    padding: 4% 10%;
+    margin-bottom: 15%;
+    background-color: #002d44;
+}
+.input
+{
+    border-color: #002d44;
+}
+@media (max-width: 1400px)
+{
+    .welcome
+    {
+        font-size: 5rem;
+    }
+    .fbla
+    {
+       width: 90%;
+        height: 100%;
+    }
+    .sample
+    {
+       margin-top: 13%;
+    }
+}
+
+@media (max-width: 1300px)
+{
+    .directions
+    {
+        font-size: 1.55rem;
+    }
+    .sample
+    {
+        margin-top: 13%;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .welcome
+    {
+        font-size: 4rem;
+    }
+    .fbla
+    {
+        width: 80%;
+        height: 90%;
+        padding-top: 7%;
+    }
+    .directions
+    {
+        font-size: 1.5rem;
+    }
+    .sample
+    {
+        margin-top: 12%;
+    }
+}
+@media (max-width: 1100px)
+{
+    .directions
+    {
+        font-size: 1.4rem;
+    }
+    .sample
+    {
+        margin-top: 13%;
+    }
+    .directions_border
+    {
+        font-size: 2.1rem;
+    }
+}
+@media (max-width: 1000px)
+{
+    .directions
+    {
+        font-size: 1.3rem;
+    }
+    .sample
+    {
+        margin-top: 15%;
+    }
+    .directions_border
+    {
+        font-size: 2rem;
+    }
+
+}

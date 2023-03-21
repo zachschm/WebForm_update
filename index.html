@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Playfair+Display:ital,wght@1,500&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+
+
+<!--Menu-->
+<section id="menu">
+  <div class="container-fluid">
+    <nav id = "nav" class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+              <img src="BannerShrunk.png"
+                   alt="FBLA Logo">
+            </a>
+    </nav>
+  </div>
+</section>
+
+<!--Title-->
+<section id = "home">
+  <div class="welcome container">
+    <h1 class="welcome">Welcome To Illinois Future Business Leaders of America</h1>
+  </div>
+<div class="titleDiv">
+    <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1">
+    <div class="col home_text_container">
+      <h1 class="home_text">Illinois Outstanding Chapter Award</h1>
+      <h1 class="home_text">The Robert T. Stickler Award</h1>
+    </div>
+    <div class="col home_image_container">
+      <img class="fbla" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgEcRFcRGvkQ9Uy-KQs_WF8iRII1HQkvGjjg&usqp=CAU">
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!--Form-->
+
+<!--  <div class="subheader" id="Points">
+    <h1>Points Calculator</h1>
+  </div>-->
+
+<div class="directions_container">
+    <h1 class="directions_title_top">Most Outstanding Chapter Award</h1>
+  <div class="directions_container row row-cols-lg-2 row-cols-md-2 row-cols-sm-1">
+    <div class="col directions_container">
+      <h1 class="directions_border">Directions</h1>
+    <h1 class="directions">
+
+      Simply click the desired event to show participation.
+      If there is an event with multiple outcomes, press the drop down list and choose the desired quantity.
+      In some cases, two clicks are required to show participation in both State and National event types.
+      Point totals will be automatically updated and displayed on the bottom of the screen.
+      When finished, update chapter information and submit the final score.
+
+      <h1>
+      </div>
+  <div class="col directions_container">
+    <h1 class="directions_border">Examples</h1>
+    <div class="sample1">
+    <div class="pointButton container">
+      <h4 class="not_clicked">Non-Clicked Event</h4>
+    </div>
+    </div>
+    <div class="sample">
+    <div class="sample pointButton container clicked_dir">
+      <h4>An Event Clicked Once</h4>
+    </div>
+    </div>
+    <div class="sample">
+    <div class="sample pointButton container twoClick_dir">
+      <h4>An Event Clicked Twice (When Applicable) </h4>
+    </div>
+    </div>
+    <div class="sample subheaderText">
+      <div class="pointButton container">
+        <tr>
+
+
+          <h4>Example Drop down Menu</h4>
+          <select>
+
+            <option selected="selected" value="0">0</option>
+
+            <option value="1">1</option>
+
+            <option value="2">2</option>
+
+            <option value="3">3</option>
+
+            <option value="4">4</option>
+
+            <option value="5">5</option>
+
+          </select><span class="style1">&nbsp;&nbsp; <-- Choose Quantity Here</span>
+
+
+      </div>
+    </div>
+  </div>
+
+    </div>
+  <section id="form">
+
+</div>
+<div class="begin">
+  Begin Here
+</div>
+</div>
+  <div class="first_subheader">
+    <h2>Chapters</h2>
+  </div>
+
+  <div class="subheaderText">
+      <h4 class="sub_description">Organizing and installing or reactivating an FBLA/PBL Chapter</h4>
+    <div class="pointButton container">
+    <tr>
+
+
+		<h4>Enter # of chapters:</h4>
+      <select id="Select1" onchange="check_select()">
+
+      <option selected="selected" value="0">0</option>
+
+      <option value="1">1</option>
+
+      <option value="2">2</option>
+
+      <option value="3">3</option>
+
+      <option value="4">4</option>
+
+      <option value="5">5</option>
+
+    </select><span class="style1">&nbsp;&nbsp; (50 pts each)</span>
+
+
+    </div>
+  </div>
+
+  <div class="subheader">
+    <h2>Current Officers</h2>
+  </div>
+
+  <div class="subheaderText">
+    <div class="pointButton container">
+
+
+          <h4>National Officers -- Enter # of officers:</h4>
+      <select id="Select4" onchange="check_select()">
+
+          <option selected="selected" value="0">0</option>
+
+          <option value="1">1</option>
+
+          <option value="2">2</option>
+
+          <option value="3">3</option>
+
+          <option value="4">4</option>
+
+          <option value="5">5</option>
+
+        </select><span class="style1">&nbsp; (75 pts each)</span>
+      </div>
+
+      <div class="pointButton container">
+
+
+   <h4>State Officers -- Enter #
+
+          of officers:</h4>
+        <select id="Select3" onchange="check_select()">
+
+          <option selected="selected" value="0">0</option>
+
+          <option value="1">1</option>
+
+          <option value="2">2</option>
+
+          <option value="3">3</option>
+
+          <option value="4">4</option>
+
+          <option value="5">5</option>
+
+        </select><span class="style1">&nbsp; (50 pts each)</span>
+    </div>
+
+        <div class="pointButton container">
+
+    <h4>Area Officers -- Enter #
+
+		of officers:</h4>
+          <select id="Select2" onchange="check_select()">
+
+          <option selected="selected" value="0">0</option>
+
+          <option value="1">1</option>
+
+          <option value="2">2</option>
+
+          <option value="3">3</option>
+
+          <option value="4">4</option>
+
+          <option value="5">5</option>
+
+        </select><span class="style1">&nbsp; (25 pts each)</span>
+  </div>
+  </div>
+  <section id="one">
+  <div class="subheader">
+    <h2>Reports</h2>
+  </div>
+  <div class="subheaderText">
+    <div class="pointButton container">
+      <h4 class="not_clicked">Membership dues paid to State and National by October 20. (25 pts)</h4>
+    </div>
+    <div class="pointButton container">
+      <h4>News for State Scrapbook by March 1 (20 pts)</h4>
+    </div>
+    <div class="pointButton container">
+      <h4>News for State Newsletter published before State Conference. (20 pts)</h4>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <h2>2018 State Leadership Conference</h2>
+  </div>
+  <div >
+    <div class="pointButton container">
+      <h4>Attendance of Chapter (50 pts)</h4>
+    </div>
+    <div class="pointButton container">
+      <h4>State Officer Candidate (20 pts ea)</h4>
+    </div>
+  </div>
+
+  <div type="button" class="subheader">
+    <h2>2017 National Fall Leadership Conference</h2>
+  </div>
+  <div class="subheaderText">
+    <div class="pointButton container">
+      <h4>Attendance of Chapter (50 pts)</h4>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <h2>2017 National Leadership Conference</h2>
+  </div>
+  <div class="subheaderText">
+    <div class="pointButton container">
+      <h4>Attendance of Chapter (50 pts)</h4>
+    </div>
+    <div class="pointButton container">
+      <h4>Check for a candidate elected office, if not elected (25 pts)</h4>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <h2>2017 Summer Leadership Workshop</h2>
+  </div>
+  <div class="subheaderText">
+    <div class="pointButton container">
+      <h4>Attendance of Chapter (50 pts)</h4>
+    </div>
+  </div>
+</section>
+
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<div class="subheader">
+  <h2>National / State Competitive Events</h2>
+</div>
+
+<div class="subheaderText container">
+  <div class="two_examples row row-cols-lg-2 row-cols-md-2 row-cols-sm-1">
+  <div class="pointButton container clicked_dir">
+  <h4 id="dir1">Click Once for State or National (25 pts)</h4>
+  </div>
+    <div class="pointButton container twoClick_dir">
+  <h4 id="dir2">Click Twice for State and National (50 pts)</h4>
+    </div>
+  </div>
+    <section id="three">
+      <div class="subheaderText container">
+  </div>
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+
+  <div class="pointButton container"data-counter = "0">
+    <h4>Attendance of Chapter</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>3D Animation</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Accounting I</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Accounting II</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Advertising</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Agribusiness</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>American Enterprise Project</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Banking and Financial Systems</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Broadcast Journalism</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Business Calculations</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Business Communications</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Business Ethics</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Business Financial Plan</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Business Law</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Business Plan</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Client Services</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Coding & Programming</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Community Service Project</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Computer Applications</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Computer Problem Solving</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Cybersecurity</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Database Design and Applications</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Desktop Application Programming</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Digital Video Production</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>E-Business</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Economics</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Electronic Career Portfolio</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Emerging Business Issues</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Entrepreneurship</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Future Business Leader</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Gold Seal Chapter Award of Merit</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Global Business</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Graphic Design</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Health Care Administration</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Help Desk</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Hospitality Management</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Impromptu Speaking</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Insurance and Risk Management</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Introduction to Business</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Introduction to Business Communication</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Introduction to Business Presentation</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Introduction to Business Procedures</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Introduction to FBLA</h4>
+    <h4>(formerly FBLA Principles and Procedures)</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Introduction to Financial Math</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Introduction to Information Technology</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Introduction to Parliamentary Procedure</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Introduction to Public Speaking</h4>
+    <h4>(formerly Public Speaking I)</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Job Interview</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Journalism</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Local Chapter Annual Business Report</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>LifeSmarts</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Management Decision Making</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Management Information System</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Marketing</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Mobile Application Development</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Network Design</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Networking Concepts</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Organizational Leadership</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Parliamentary Procedure</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Partnership with Business</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Personal Finance</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Public Service Announcement</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Public Speaking II</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Publication Design</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Sales Presentation</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Securities and Investments</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Social Media Challenge</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Sports and Entertainment Management</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Spreadsheet Applications</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>State Chapter Annual Business Report</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Virtual Business Challenge</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Website Development</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Who's Who in FBLA</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Word Processing</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Largest Local Chapter Member -- Professional Division</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Local Recruitment of Chapters</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>March of Dimes - Most money raised on a per capita basis and/or most creative original idea for fundraising</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>March of Dimes - Public health program</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Legislative Advisory Council Recognition Award</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Mary E. Webb Award</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Participants in the "Battle of the Area"</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Raffle Tickets for Prize Drawing and/or 50/50 Tickets</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+  <h4>"SCRITS" Networking with Business Project</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>State President's Membership Award</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>State Project -- American Enterprise Day</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>State Project -- FBLA-PBL Week</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>State Project -- Go Green Project</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>State Project -- In Praise of Age (Connecting Generations)</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>State Project -- Spring up the Middle Level</h4>
+  </div>
+  <div class="pointButton container" data-counter = "0">
+    <h4>Talent Show</h4>
+  </div>
+</div>
+</div>
+</section>
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<section id="programs">
+<div class="subheader">
+  <h2>National Programs</h2>
+</div>
+<div class="subheaderText container">
+
+  <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+  <div class="pointButton container">
+    <h4>The Stock Market Game</h4>
+  </div>
+  <div class="pointButton container">
+    <h4>Donated to National Scholarship Fund</h4>
+  </div>
+  <div class="pointButton container">
+    <h4>Distinguished Business Leader Scholarship</h4>
+  </div>
+  <div class="pointButton container">
+    <h4>FBLA Market Share Award -- must have submitted form</h4>
+  </div>
+  <div class="pointButton container">
+    <h4>Membership Madness -- at least one member submitted</h4>
+  </div>
+  <div class="pointButton container">
+    <h4>Membership Mania -- at least one member submitted</h4>
+  </div>
+  <div class="pointButton container">
+    <h4>Membership Achievement Award</h4>
+  </div>
+  <div class="pointButton container">
+    <h4>100% class participation award</h4>
+  </div>
+  <div class="pointButton container">
+    <h4>Chapter Challenge</h4>
+  </div>
+  <div class="pointButton container">
+    <h4>Super Sweeps</h4>
+  </div>
+  <div class="pointButton container">
+    <h4>Action Awareness</h4>
+  </div>
+  <div class="pointButton container">
+    <h4>Non-Stop November</h4>
+  </div>
+  <div class="pointButton container">
+    <h4>Good Neighbor</h4>
+  </div>
+  <div class="pointButton container">
+  <h4>Business Achievement Awards—at least one member submitted</h4>
+  </div>
+  <div class="pointButton container">
+    <h4>FBLA Distinguished Business Leader</h4>
+  </div>
+  <div class="pointButton container">
+    <h4>Community Service Awards—at least one member submitted</h4>
+  </div>
+  <div class="pointButton container">
+    <h4>Applied for the Knowledge Matters Scholarship</h4>
+  </div>
+  <div class="pointButton container">
+    <h4>Applied for the LifeSmarts & the National Consumers League</h4>
+  </div>
+  <div class="pointButton container">
+    <h4>Participated in the Virtual Challenge</h4>
+  </div>
+  <div class="pointButton container">
+    <h4>Participated in American Enterprise Day, November 15</h4>
+  </div>
+  <div class="pointButton container">
+    <h4>Participated in FBLA-PBL Week</h4>
+  </div>
+  <div class="pointButton container">
+    <h4>Applied for the National Society of High School Scholars (NSHSS)</h4>
+  </div>
+  <div class="pointButton container">
+    <h4>Applied for the National Technical Honor Society (NTHS)</h4>
+  </div>
+  <div class="pointButton container">
+    <h4>Applied for FBLA Scholarship at any one of the following:</h4>
+  </div>
+  </div>
+    <div class="pointButton container">
+  <p class="colleges">
+  Arizona State University
+  Barton College
+  Berkeley College
+  Catawba College
+  Central Christian College of Kansas
+  Champlain College
+  Cumberland University
+  FIDM/Fashion Institute of Design and Merchandising
+  Horizons School of Technology
+  Johnson & Wales University
+  Milwaukee School of Engineering
+  Minerva Schools at KGI
+  Morrisville State College
+  Northwood University
+  NSU & Rason’s Edge
+  Penn Commercial Business/Technical School
+  Pittsburgh Technical College
+  Ringling College of Art and Design
+  Southern New Hampshire University
+  The Art Institutes Systems of Schools
+  University of the Ozarks
+  Webber International University
+  Wesleyan College
+  </p>
+    </div>
+</div>
+</section>
+  <section id="score">
+      <div class="foot">
+        <h1 id = "scoreboard">Total Score = 0</h1>
+      </div>
+  </section>
+</section>
+<section id="upload">
+  <h1 class="directions_title_bottom">Upload & Submit</h1>
+  <div class="form container">
+
+    <div class="submissions row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 align-content-center">
+<!--  //////////////////////////////////-->
+      <div class="col">
+  <div class="upload_content row g-3 align-items-center">
+    <div class="col-auto">
+      <label for="inputPassword6" class="col-form-label"><h1>Chapter Number</h1></label>
+    </div>
+    <div class="col-auto">
+      <input type="number" class="input form-control" aria-describedby="passwordHelpInline">
+    </div>
+  </div>
+      </div>
+<!--    //////////////////////////-->
+      <div class="col">
+    <div class="upload_content row g-3 align-items-center ">
+      <div class="col-auto">
+        <label for="inputPassword6" class="col-form-label"><h1>School Name</h1></label>
+      </div>
+      <div class="col-auto">
+        <input type="text"  class="input form-control" aria-describedby="passwordHelpInline">
+      </div>
+    </div>
+      </div>
+    <!--    //////////////////////////-->
+      <div class="col">
+    <div class="upload_content row g-3 align-items-center">
+      <div class="col-auto">
+        <label for="inputPassword6" class="col-form-label"><h1>City</h1></label>
+      </div>
+      <div class="col-auto">
+        <input type="text"  class="input form-control" aria-describedby="passwordHelpInline">
+      </div>
+    </div>
+      </div>
+    <!--    //////////////////////////-->
+      <div class="col">
+    <div class="upload_content row g-3 align-items-center">
+      <div class="col-auto">
+        <label for="inputPassword6" class="col-form-label"><h1>Date</h1></label>
+      </div>
+      <div class="col-auto">
+        <input type="date" id="inputPassword6" class="input form-control" aria-describedby="passwordHelpInline">
+      </div>
+    </div>
+      </div>
+    <!--    //////////////////////////-->
+  </div>
+    <button type="button" class="submit btn btn-primary btn-lg"><h1>Submit</h1></button>
+  </div>
+
+</section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="script.js" charset="utf-8"></script>
+</body>
+</html>
