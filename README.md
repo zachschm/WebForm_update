@@ -1,5 +1,5 @@
 # WebForm_update
-Transform a vanilla html website form both in design and JS capabaliity
+Transform a vanilla html website
 
 View the Site Here ------> https://zachschm.github.io/WebForm_update/
 
